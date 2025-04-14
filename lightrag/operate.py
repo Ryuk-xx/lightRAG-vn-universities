@@ -770,24 +770,14 @@ async def kg_query(
 
     # Handle empty keywords
     if hl_keywords == [] and ll_keywords == []:
-        # logger.warning("low_level_keywords and high_level_keywords is empty")
         return PROMPTS["fail_response"]
     if ll_keywords == [] and query_param.mode in ["local", "hybrid"]:
-        # logger.warning(
-        #     "low_level_keywords is empty, switching from %s mode to global mode",
-        #     query_param.mode,
-        # )
         query_param.mode = "global"
     if hl_keywords == [] and query_param.mode in ["global", "hybrid"]:
-        # logger.warning(
-        #     "high_level_keywords is empty, switching from %s mode to local mode",
-        #     query_param.mode,
-        # )
         query_param.mode = "local"
 
     ll_keywords_str = ", ".join(ll_keywords) if ll_keywords else ""
     hl_keywords_str = ", ".join(hl_keywords) if hl_keywords else ""
-
     # Build context
     context = await _build_query_context(
         ll_keywords_str,
@@ -799,6 +789,7 @@ async def kg_query(
         query_param,
     )
 
+    
     if query_param.only_need_context:
         return context
     if context is None:
@@ -1130,7 +1121,7 @@ async def mix_kg_vector_query(
         get_kg_context(), get_vector_context()
     )
 
-    # 4. Merge contexts
+    # 4. Merge contexts    
     if kg_context is None and vector_context is None:
         return PROMPTS["fail_response"]
 

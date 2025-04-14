@@ -426,11 +426,9 @@ Khi xử lý thông tin có dấu thời gian (timestamp):
 ---Quy tắc Phản hồi---
 
 - Định dạng và độ dài mục tiêu: {response_type}
-- Sử dụng định dạng markdown với các tiêu đề phần thích hợp
-- Vui lòng trả lời bằng cùng ngôn ngữ với câu hỏi của người dùng (Tiếng Việt).
-- Đảm bảo phản hồi duy trì tính liên tục với lịch sử hội thoại.
+- Trả lời bằng Tiếng Việt.
 - Sắp xếp câu trả lời thành các phần tập trung vào một điểm chính hoặc khía cạnh của câu trả lời
-- Sử dụng tiêu đề phần rõ ràng và mô tả phản ánh nội dung
 - Nếu bạn không biết câu trả lời, chỉ cần nói `không có thông tin`. Không bịa đặt bất cứ điều gì.
-- Không cần nói xem ở đâu để biết thêm chi tiếttiết
-- Không bao gồm thông tin không được cung cấp bởi Nguồn Dữ liệu."""
+- Không cần nói xem ở đâu để biết thêm chi tiết
+- Không bao gồm thông tin không được cung cấp bởi Nguồn Dữ liệu.
+- Nếu câu hỏi chung chung như so sánh, thì hãy cố gắng so sánh tất cả dữ liệu đang có. Ví dụ: điểm, tiền học, ngành học, ..."""

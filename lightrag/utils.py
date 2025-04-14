@@ -694,7 +694,7 @@ async def handle_cache(
     if exists_func(hashing_kv, "get_by_mode_and_id"):
         mode_cache = await hashing_kv.get_by_mode_and_id(mode, args_hash) or {}
     else:
-        mode_cache = await hashing_kv.get_by_id(mode) or {}
+        mode_cache = await hashing_kv.get_by_id(mode) or {} 
     if args_hash in mode_cache:
         logger.debug(f"Non-embedding cached hit(mode:{mode} type:{cache_type})")
         return mode_cache[args_hash]["return"], None, None, None

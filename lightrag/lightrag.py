@@ -1443,7 +1443,7 @@ class LightRAG:
             global_config=asdict(self),
             hashing_kv=self.llm_response_cache,
         )
-
+        
         await self._query_done()
         return response
 
