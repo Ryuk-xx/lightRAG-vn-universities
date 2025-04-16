@@ -19,8 +19,7 @@ This is a university information retrieval chatbot that uses a hybrid method com
 ├── addressing.json               # University address data
 ├── indexing/                     # Code for storing processed data into database
 ├── data_indexing/                # Stored data in knowledge graph and chunks
-├── retrieval.py                  # Main script for querying and generating answers
-└── test.ipynb                    # Notebook to test the retrieval and generation flow
+└── retrieval.py                  # Main script for querying and generating answers
 ```
 
 
@@ -48,12 +47,7 @@ pip install -r requirements.txt
   - Pre-processed data in two forms:
     + Knowledge graph format (entities, relations)
     + Chunked text for semantic retrieval
-### 6. retrieval.py
-  - This script handles:
-    + Query processing
-    + Running hybrid retrieval
-    + Generating final answers using RAG-style techniques
-### 7. test.ipynb
+### 6. retrieval.ipynb
   - A Jupyter Notebook for testing the pipeline end-to-end, from input queries to answer generation.
 ## 🚀 Usage
 - You can run the chatbot by invoking the retrieval.py script with your question. For testing, use the test.ipynb notebook to simulate query-answer interactions.
