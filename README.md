@@ -55,5 +55,3 @@ pip install -r requirements.txt
 - Built upon LightRAG
 - Web search powered by integrated search APIs
 - Source data: https://dsdaihoc.com/
-## ✍️ Note
-- 🚧 Work in Progress: Please note that this project is still a work in progress. Certain components are under active development and may not yet be fully functional or finalized.
